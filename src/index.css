@@ -1,13 +1,598 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    /* background: black; */
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* MAIN COMPONENTS */
+
+.check-list {
+    list-style: none;
+    font-weight: 600;
+    position: relative;
+}
+
+.check-list i.fas.fa-check {
+    color: #0f7173;
+}
+
+.fs_1-5 {
+    font-size: 1.5rem;
+}
+
+/* END MAIN COMPONENTS */
+
+/* HEADER START */
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+}
+
+#menu {
+    position: relative;
+    top: 0;
+    z-index: 1050;
+}
+
+#menu {
+    font-weight: 600;
+}
+
+#menu .navbar-brand img {
+    height: 60px;
+}
+
+#mainNavbar a {
+    color: #fff;
+}
+
+header .header-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/wave.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    z-index: 1;
+}
+
+header .header-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-130deg, #990000, #e40202);
+    background-image: linear-gradient(-130deg, #990000, #e40202), url(/assets/images/header-image.png);
+    background-blend-mode: multiply;
+    /* background-size: auto 100%; */
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+#header-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-content h1 {
+    max-width: 400px;
+    font-weight: 700;
+}
+
+#header-content p {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#header-content .btn.btn-light {
+    font-weight: 600;
+    color: #990000;
+}
+
+#header-content .featured {
+    max-width: 400px;
+}
+
+/* END HEADER */
+
+/* SECTIONS */
+section h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+section h1,
+h2 {
+    color: #0f7173;
+    word-break: break-word;
+}
+
+section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+section h3 {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+section h3::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+    bottom: -15px;
+    left: calc(50% - 150px);
+}
+
+section h4 {
+    position: relative;
+    font-size: 3rem;
+    color: #717171;
+    font-weight: 700;
+    display: inline-block;
+}
+
+section h4::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #717171;
+    bottom: -15px;
+    left: 25%;
+}
+
+#channels i.fas.fa-tv {
+    color: #940000;
+    font-size: 4rem;
+}
+
+#channels .check-list::after {
+    content: "";
+    width: 5px;
+    height: 50%;
+    position: absolute;
+    background-color: #940000;
+    top: 25%;
+    left: -15px;
+    border-radius: 25%;
+}
+
+#channelsLogos {
+    max-width: 100%;
+}
+
+#watchAnywhere {
+    background-image: linear-gradient(300deg, #990000, #f83600);
+    color: #fff;
+    padding: 40px;
+}
+
+#devices {
+    text-align: center;
+}
+
+#devices img {
+    max-height: 100px;
+    transition: all 0.3s ease-in;
+}
+
+#devices img:hover {
+    transform: scale(1.07);
+}
+
+#devices > div > div:nth-child(2) {
+    font-weight: 700;
+    margin: 10px;
+}
+
+#products {
+    overflow: hidden;
+}
+
+#products,
+#products > div {
+    width: 100%;
+    height: 400px;
+}
+
+#products div.parallax-inside {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+#products div.parallax-inside > div:first-child {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#products div.parallax-inside > div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, transparent, transparent, #000, #000);
+    z-index: 1;
+}
+
+#products div.parallax-inside > div p {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#products div.parallax-inside img {
+    max-width: 100%;
+    transition: ease-in 0.3s;
+}
+
+#products div.parallax-inside img:hover {
+    transform: scale(1.05);
+    -webkit-filter: drop-shadow(0 0 4px #000);
+    filter: drop-shadow(0 0 4px #000);
+}
+
+#plans {
+    background-color: #f0eded;
+    text-align: center;
+}
+
+div.plans-columns {
+    width: 280px;
+    background-color: #fff;
+    box-shadow: 0 0 5px #0005;
+}
+
+div.plan-detail {
+    color: #3d3d3d;
+    text-align: left;
+}
+
+div.price-top > div.title {
+    font-size: 30px;
+    background-color: #e4e4e4;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+
+div.price-top > div.price {
+    background-color: #f6f6f6;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 30%, 101% 0%, 100% 100%, 0% 100%);
+    margin-top: -32px;
+}
+
+div.price-top > div.price span:nth-child(1) {
+    font-size: 24px;
+}
+
+div.price-top > div.price span:nth-child(2) {
+    font-size: 40px;
+}
+
+div.price-top > div.price span:nth-child(3) {
+    font-size: 26px;
+}
+
+div.plans-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.plans-columns {
+    margin-bottom: 20px;
+    margin-right: 10px;
+    transition: ease-in-out 0.3s;
+}
+
+div.plans-columns:hover {
+    transform: translateY(-10px);
+}
+
+div.plan-detail {
+    padding: 15px 0;
+}
+
+div.plan-detail ul {
+    list-style: none;
+    line-height: 2rem;
+}
+
+div.plan-detail ul li {
+    padding: 0 15px;
+    position: relative;
+}
+
+div.plan-detail ul li:hover {
+    background-color: #f6f6f6;
+}
+div.plan-detail ul li:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #0f7173;
+}
+
+div.plan-detail ul li span {
+    font-weight: 700;
+}
+
+div.plan-detail .btn-plans {
+    background-color: #0f7173;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+div.redplay {
+    background-image: linear-gradient(130deg, #990000, #e60303);
+}
+
+div.mfamilycinema {
+    background-image: linear-gradient(130deg, #db4200, #fd6111);
+}
+
+div.redplay,
+div.mfamilycinema {
+    color: #fff;
+    position: relative;
+}
+
+div.redplay::before,
+div.mfamilycinema::before {
+    content: "DESCONTO";
+    position: absolute;
+    /* width: 100px; */
+    top: -13px;
+    left: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #0f7173;
+    padding: 0 10px;
+}
+
+#testimonials {
+    padding: 50px 0;
+}
+
+.testimonial-item > div:first-child {
+    border-right: 1px dotted #6665;
+}
+
+.testimonial-item > div:nth-child(2) p {
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    padding: 30px 10%;
+}
+
+.testimonial-item > div:nth-child(2) .quoteL,
+.testimonial-item > div:nth-child(2) .quoteR {
+    position: absolute;
+    font-size: 2rem;
+    color: #666;
+}
+
+.testimonial-item > div:nth-child(2) .quoteL {
+    top: -10px;
+    left: 30px;
+}
+
+.testimonial-item > div:nth-child(2) .quoteR {
+    bottom: -10px;
+    right: 30px;
+}
+
+.testimonial-item .photo {
+    text-align: right;
+}
+
+.testimonial-item img {
+    max-width: 100px;
+    max-height: 100px;
+
+    border-radius: 50%;
+    box-shadow: 0 0 5px #000;
+}
+
+.testimonial-item .stars {
+    color: #666;
+    font-size: 28px;
+    font-size: 1.5rem;
+}
+
+.testimonial-item .stars span{
+    display: inline-block;
+}
+
+.testimonial-item .stars .golden-star {
+    color: #ffa200;
+}
+
+.testimonial-item .information > p {
+    margin: 0;
+    text-align: left;
+}
+.testimonial-item .information > p:last-child {
+    font-style: italic;
+}
+
+.carousel-item {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.carouselControllers {
+    text-align: center;
+}
+
+.carouselControllers a {
+    /* background-color: #0007; */
+    color: #0f7173;
+    font-size: 2rem;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#faq {
+    padding: 40px 0;
+    background-color: #f0eded;
+}
+
+#faq .faq-row {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#faq .row-title {
+    justify-content: initial;
+}
+
+#faq .icon-wrapper {
+    order:-1;
+    margin-right: 5px;
+}
+
+#faq .icon-wrapper svg {
+    width: 100%;
+    height: 100%;
+    margin-top: -4px;
+}
+
+footer {
+    background-color: #252525;
+    padding: 20px;
+    color: #FFF;
+}
+
+footer .copybar {
+    text-align: center;
+    font-weight: 900;
+}
+
+footer h6 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+footer ul {
+    list-style: none;
+    display: inline-block;
+}
+
+footer ul li {
+    transition: .3s;
+}
+
+footer ul li:hover {
+    transform: translateX(3px);
+}
+
+footer ul li::before {
+    content: "›› ";
+}
+
+footer a {
+    color: #FFF;
+    transition: color .3s;
+}
+
+footer a:hover {
+    color: #c0c0c0;
+    text-decoration: none;
+}
+
+footer .logo {
+    max-width: 135px;
+}
+
+@media (max-width: 1199.98px) {
+    .testimonial-item .photo {
+        text-align: center;
+    }
+    .testimonial-item > div:nth-child(2) {
+        margin-top: 30px;
+    }
+    .testimonial-item > div:first-child > .row {
+        text-align: center;
+    }
+    .testimonial-item .information > p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #header-content > div:first-child > .row > div:nth-child(2) {
+        order: -1;
+    }
+}
+
+@media (max-width: 576px) {
+    #header-content .featured {
+        max-width: 100%;
+    }
+
+    #menu .navbar-brand img {
+        height: 45px;
+    }
+}
+
+/* animate css changes */
+.animate__animated.animate__bounce {
+    animation: bounce;
+    margin: 0 0.1rem;
+    animation-duration: 2s;
+    font-size: 1.5rem;
 }
