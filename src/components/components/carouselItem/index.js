@@ -1,8 +1,8 @@
 import React from "react";
 
-function TestItem() {
+function TestItem(props) {
     return (
-        <div className="carousel-item active">
+        <div className={'carousel-item ' + props.status}>
             <div className="testimonial-item row">
                 <div className="col-md-4">
                     <div className="row">
@@ -29,7 +29,7 @@ function TestItem() {
                             </div>
                             <div className="information">
                                 <p>Marcelo Henrique</p>
-                                <p>2 meses atrás</p>
+                                <p>2 meses atrás{props.status}</p>
                             </div>
                         </div>
                     </div>

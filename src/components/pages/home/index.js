@@ -353,6 +353,8 @@ function Home() {
                     <div id="caroselFrame">
                         <div id="carouselControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
+                                <TestItem status="active"/>
+                                <TestItem/>
                                 <TestItem/>
                             </div>
                             <div className="carouselControllers">
