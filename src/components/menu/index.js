@@ -31,6 +31,9 @@ function Menu() {
                     <li className="nav-item active">
                         <a className="nav-link" href="#">Inscreva-se</a>
                     </li>
+                    {user && <li className="nav-item active">
+                        batata
+                    </li>}
                 </ul>
             </div>
         </nav>
