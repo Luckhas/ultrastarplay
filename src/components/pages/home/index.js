@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Parallax, Background } from "react-parallax";
 import Faq from "react-faq-component";
 import TestItem from "../../components/carouselItem";
+import PlanItem from "../../components/planItem";
+import { planService } from "../../../services/PlanService";
+import { useHistory, withRouter } from "react-router-dom";
 
 const data = {
     // title: "FAQ (How it works)",
@@ -15,8 +18,7 @@ const data = {
         },
         {
             title: "Nunc maximus, magna at ultricies elementum",
-            content:
-                "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+            content: "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
         },
         {
             title: "Curabitur laoreet, mauris vel blandit fringilla",
@@ -31,22 +33,40 @@ const data = {
         },
     ],
 };
- 
+
 const styles = {
     // bgColor: 'white',
     // titleTextColor: "#717171",
     rowTitleColor: "#717171",
     rowContentColor: "#717171",
     arrowColor: "#717171",
-    paddingLeft: "15px"
+    paddingLeft: "15px",
 };
- 
+
 const config = {
     // animate: true,
-    arrowIcon: ' ',
+    arrowIcon: " ",
 };
 
 function Home() {
+    const [plans, setPlans] = useState([]);
+    useEffect(() => {
+        const result = planService.getPlans();
+        setPlans(result);
+    }, []);
+
+    const history = useHistory();
+
+    const handlePlanSelect = (plan) => {
+        // if (userService.isLogged()) {
+        //     history.push('/assinar/' + plan.type);
+        //     return;
+        // }
+
+        // localStorage.setItem('afterAction', '/assinar/' + plan.type);
+        history.push('/assinar/' + plan.type);
+    }
+
     return (
         <div id="middleContent" className="container-fluid p-0">
             <section id="channels" className="container-fluid">
@@ -159,186 +179,9 @@ function Home() {
                     <h4 className="mb-5">Planos</h4>
                     <div className="d-flex justify-content-center">
                         <div className="plans-row">
-                            <div className="plans-columns">
-                                <div className="price-top">
-                                    <div className="title">REDPLAY</div>
-                                    <div className="price">
-                                        <span>R$ </span>
-                                        <span>24,</span>
-                                        <span>99 /mês</span>
-                                    </div>
-                                </div>
-                                <div className="plan-detail">
-                                    <ul>
-                                        <li>
-                                            <span>30</span> dias de acesso
-                                        </li>
-                                        <li>
-                                            <span>Acesso</span> a 300+ canais
-                                        </li>
-                                        <li>
-                                            <span>60</span> Canais em 4k
-                                        </li>
-                                        <li>
-                                            <span>40</span> Canais adultos
-                                        </li>
-                                        <li>
-                                            <span>15.000+</span> Filmes & Séries
-                                        </li>
-                                        <li>
-                                            <span>App</span> para celular Android
-                                        </li>
-                                        <li>
-                                            <span>HOT App</span> Disponível
-                                        </li>
-                                        <li>
-                                            <span>7 dias grátis</span> para novos usuários
-                                        </li>
-                                    </ul>
-                                    <div className="text-center">
-                                        <a href="" className="btn btn-plans">
-                                            Assinar
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="plans-columns">
-                                <div className="price-top">
-                                    <div className="title redplay">REDPLAY</div>
-                                    <div className="price">
-                                        <span>R$ </span>
-                                        <span>129,</span>
-                                        <span>99 /mês</span>
-                                    </div>
-                                </div>
-                                <div className="plan-detail">
-                                    <ul>
-                                        <li>
-                                            <span>30</span> dias de acesso
-                                        </li>
-                                        <li>
-                                            <span>Acesso</span> a 300+ canais
-                                        </li>
-                                        <li>
-                                            <span>60</span> Canais em 4k
-                                        </li>
-                                        <li>
-                                            <span>40</span> Canais adultos
-                                        </li>
-                                        <li>
-                                            <span>15.000+</span> Filmes & Séries
-                                        </li>
-                                        <li>
-                                            <span>App</span> para celular Android
-                                        </li>
-                                        <li>
-                                            <span>HOT App</span> Disponível
-                                        </li>
-                                        <li>
-                                            <span>7 dias grátis</span> para novos usuários
-                                        </li>
-                                    </ul>
-                                    <div className="text-center">
-                                        <a href="" className="btn btn-plans">
-                                            Assinar
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="plans-columns">
-                                <div className="price-top">
-                                    <div className="title">
-                                        MY FAMILY <br /> CINEMA
-                                    </div>
-                                    <div className="price">
-                                        <span>R$ </span>
-                                        <span>24,</span>
-                                        <span>99 /mês</span>
-                                    </div>
-                                </div>
-                                <div className="plan-detail">
-                                    <ul>
-                                        <li>
-                                            <span>30</span> dias de acesso
-                                        </li>
-                                        <li>
-                                            <span>Acesso</span> a 300+ canais
-                                        </li>
-                                        <li>
-                                            <span>60</span> Canais em 4k
-                                        </li>
-                                        <li>
-                                            <span>40</span> Canais adultos
-                                        </li>
-                                        <li>
-                                            <span>15.000+</span> Filmes & Séries
-                                        </li>
-                                        <li>
-                                            <span>App</span> para celular Android
-                                        </li>
-                                        <li>
-                                            <span>HOT App</span> Disponível
-                                        </li>
-                                        <li>
-                                            <span>7 dias grátis</span> para novos usuários
-                                        </li>
-                                    </ul>
-                                    <div className="text-center">
-                                        <a href="" className="btn btn-plans">
-                                            Assinar
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="plans-columns">
-                                <div className="price-top">
-                                    <div className="title mfamilycinema">
-                                        MY FAMILY
-                                        <br /> CINEMA
-                                    </div>
-                                    <div className="price">
-                                        <span>R$ </span>
-                                        <span>129,</span>
-                                        <span>99 /mês</span>
-                                    </div>
-                                </div>
-                                <div className="plan-detail">
-                                    <ul>
-                                        <li>
-                                            <span>30</span> dias de acesso
-                                        </li>
-                                        <li>
-                                            <span>Acesso</span> a 300+ canais
-                                        </li>
-                                        <li>
-                                            <span>60</span> Canais em 4k
-                                        </li>
-                                        <li>
-                                            <span>40</span> Canais adultos
-                                        </li>
-                                        <li>
-                                            <span>15.000+</span> Filmes & Séries
-                                        </li>
-                                        <li>
-                                            <span>App</span> para celular Android
-                                        </li>
-                                        <li>
-                                            <span>HOT App</span> Disponível
-                                        </li>
-                                        <li>
-                                            <span>7 dias grátis</span> para novos usuários
-                                        </li>
-                                    </ul>
-                                    <div className="text-center">
-                                        <a href="" className="btn btn-plans">
-                                            Assinar
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            {plans.map((plan) => {
+                                return <PlanItem plan={plan} onPlanSelect={handlePlanSelect} />;
+                            })}
                         </div>
                     </div>
                 </div>
@@ -353,9 +196,9 @@ function Home() {
                     <div id="caroselFrame">
                         <div id="carouselControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
-                                <TestItem status="active"/>
-                                <TestItem/>
-                                <TestItem/>
+                                <TestItem status="active" />
+                                <TestItem />
+                                <TestItem />
                             </div>
                             <div className="carouselControllers">
                                 <a href="#carouselControls" role="button" data-slide="prev">
