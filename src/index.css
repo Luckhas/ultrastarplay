@@ -178,6 +178,11 @@ section h4::after {
     font-size: 4rem;
 }
 
+#channels i.fa-mobile {
+    color: #940000;
+    font-size: 4rem;
+}
+
 #channels .check-list::after {
     content: "";
     width: 5px;
@@ -375,6 +380,13 @@ div.plan-detail .btn-plans {
     font-weight: 700;
 }
 
+div.downloads .btn-download {
+    background-color: #0f7173;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
 div.redplay {
     background-image: linear-gradient(130deg, #990000, #e60303);
 }
@@ -556,6 +568,21 @@ footer a:hover {
 
 footer .logo {
     max-width: 135px;
+}
+
+.description-download {
+    font-size: 0.7rem;
+    color: #990000;
+}
+
+.icon-download {
+    /* width: 70px; */
+    height: 70px;
+}
+
+.note {
+    font-size: 0.5rem;
+    color: black;
 }
 
 @media (max-width: 1199.98px) {
