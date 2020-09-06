@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route, Link, Router } from "react-router-dom";
 import Header from "./components/header";
 import Home from "./components/pages/home";
 import Footer from "./components/footer";
-// import Subscribe from "./components/pages/payment";
 import Download from './components/pages/download/index';
+import Subscribe from "./components/pages/payment";
 
 // my components
 
@@ -20,11 +20,11 @@ function App() {
                     <Route path="/produtos">
                         <h1>teste</h1>
                     </Route>
+                    <Route path="/assinar/:type">
+                        <Subscribe />
+                    </Route>
                     <Route path="/download">
                         <Download />
-                    </Route>
-                    <Route path="/assinar/:type">
-                        {/* <Subscribe /> */}
                     </Route>
                 </Switch>
             </BrowserRouter>
