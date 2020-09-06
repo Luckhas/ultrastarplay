@@ -558,6 +558,29 @@ footer .logo {
     max-width: 135px;
 }
 
+.subscribe {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.subscribe .rh-dark {
+    padding: 20px;
+    font-weight: 700;
+    background-color: #f0eded;
+}
+
+.payment-type .pLogo {
+    max-width: 300px;
+    margin: 30px auto;
+    transition: .3s ease-in-out;
+}
+
+.payment-type .pLogo:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #0007;
+}
+
+
 @media (max-width: 1199.98px) {
     .testimonial-item .photo {
         text-align: center;

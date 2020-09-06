@@ -21,6 +21,12 @@ class PlanService {
                     { feature: "HOT App", desc: "Disponível" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }
                 ],
+                payUrl: [
+                    { 
+                        mp: "https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=185837608-4ba8ca7d-5b49-4174-b3e6-84ee09936306",
+                        pp: "https://picpay.com"
+                 }
+                ],
             },
             {
                 name: "Redplay",
@@ -37,6 +43,12 @@ class PlanService {
                     { feature: "App", desc: "para celular Android" },
                     { feature: "HOT App", desc: "Disponível" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }
+                ],
+                payUrl: [
+                    { 
+                        mp: "https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=185837608-4ba8ca7d-5b49-4174-b3e6-84ee09936306",
+                        pp: "https://picpay.com"
+                 }
                 ],
             },
             {
@@ -55,6 +67,12 @@ class PlanService {
                     { feature: "HOT App", desc: "Disponível" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }
                 ],
+                payUrl: [
+                    { 
+                        mp: "https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=185837608-4ba8ca7d-5b49-4174-b3e6-84ee09936306",
+                        pp: "https://picpay.com"
+                 }
+                ],
             },
             {
                 name: "My Family Cinema",
@@ -71,6 +89,12 @@ class PlanService {
                     { feature: "App", desc: "para celular Android" },
                     { feature: "HOT App", desc: "Disponível" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }
+                ],
+                payUrl: [
+                    { 
+                        mp: "https://www.mercadopago.com.br/checkout/v1/redirect?preference-id=185837608-4ba8ca7d-5b49-4174-b3e6-84ee09936306",
+                        pp: "https://picpay.com"
+                 }
                 ],
             }
         ];
