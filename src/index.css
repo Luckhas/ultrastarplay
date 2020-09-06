@@ -178,6 +178,11 @@ section h4::after {
     font-size: 4rem;
 }
 
+#channels i.fa-mobile {
+    color: #940000;
+    font-size: 4rem;
+}
+
 #channels .check-list::after {
     content: "";
     width: 5px;
@@ -369,6 +374,13 @@ div.plan-detail ul li span {
 }
 
 div.plan-detail .btn-plans {
+    background-color: #0f7173;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+div.downloads .btn-download {
     background-color: #0f7173;
     text-transform: uppercase;
     color: #fff;
@@ -580,6 +592,21 @@ footer .logo {
     box-shadow: 0 0 10px #0007;
 }
 
+
+.description-download {
+    font-size: 0.7rem;
+    color: #990000;
+}
+
+.icon-download {
+    /* width: 70px; */
+    height: 70px;
+}
+
+.note {
+    font-size: 0.5rem;
+    color: black;
+}
 
 @media (max-width: 1199.98px) {
     .testimonial-item .photo {

@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Home from "./components/pages/home";
 import Footer from "./components/footer";
 import Subscribe from "./components/pages/payment";
+import Download from "./components/pages/download/index";
 
 // my components
 
@@ -21,6 +22,9 @@ function App() {
                     </Route>
                     <Route path="/assinar/:type">
                         <Subscribe />
+                    </Route>
+                    <Route path="/download">
+                        <Download />
                     </Route>
                 </Switch>
             </BrowserRouter>

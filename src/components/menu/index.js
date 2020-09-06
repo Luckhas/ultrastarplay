@@ -26,7 +26,7 @@ function Menu() {
                         <a className="nav-link" href="#">Produtos</a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Download</a>
+                        <a className="nav-link" href="">Download</a>
                     </li>
                     <li className="nav-item active">
                         <a className="nav-link" href="#">Inscreva-se</a>
