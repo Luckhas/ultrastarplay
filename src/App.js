@@ -5,6 +5,7 @@ import Home from "./components/pages/home";
 import Footer from "./components/footer";
 import Download from './components/pages/download/index';
 import Subscribe from "./components/pages/payment";
+import Contact from "./components/pages/contact";
 
 // my components
 
@@ -25,6 +26,9 @@ function App() {
                     </Route>
                     <Route path="/download">
                         <Download />
+                    </Route>
+                    <Route path="/contato">
+                        <Contact />
                     </Route>
                 </Switch>
             </BrowserRouter>

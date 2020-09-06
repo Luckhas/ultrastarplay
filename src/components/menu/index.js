@@ -17,19 +17,16 @@ function Menu() {
             <div className="collapse navbar-collapse" id="mainNavbar">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Início <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="/">Início <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Preço</a>
+                        <a className="nav-link" href="/assinar">Assinar</a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Produtos</a>
+                        <a className="nav-link" href="/download">Download</a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link" href="">Download</a>
-                    </li>
-                    <li className="nav-item active">
-                        <a className="nav-link" href="#">Inscreva-se</a>
+                        <a className="nav-link" href="/contato">Contato</a>
                     </li>
                 </ul>
             </div>

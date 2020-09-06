@@ -58,12 +58,6 @@ function Home() {
     const history = useHistory();
 
     const handlePlanSelect = (plan) => {
-        // if (userService.isLogged()) {
-        //     history.push('/assinar/' + plan.type);
-        //     return;
-        // }
-
-        // localStorage.setItem('afterAction', '/assinar/' + plan.type);
         history.push('/assinar/' + plan.type);
     }
 
