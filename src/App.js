@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Home from "./components/pages/home";
 import Footer from "./components/footer";
 import Download from './components/pages/download/index';
+import Description from './components/pages/description/index';
 import Subscribe from "./components/pages/payment";
 import Contact from "./components/pages/contact";
 
@@ -29,6 +30,9 @@ function App() {
                     </Route>
                     <Route path="/contato">
                         <Contact />
+                    </Route>
+                    <Route path="/assinar">
+                        <Description />
                     </Route>
                 </Switch>
             </BrowserRouter>
