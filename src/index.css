@@ -654,6 +654,53 @@ footer .logo {
     color: black;
 }
 
+
+.first-plan, .first-plan > h2, .third-plan, .third-plan > h2 {
+    color: #0f7173;
+    background-color: #fff;
+    /* background-image: linear-gradient(-130deg, #fff, #c4c0c0); */
+    /* background-image: linear-gradient(-130deg, #990000, #e40202); */
+}
+
+.second-plan, .fourth-plan {
+    color: white !important;
+    background-image: linear-gradient(-130deg, #990000, #e40202);
+}
+
+.second-plan h2, .fourth-plan h2 {
+    color: white !important;
+}
+
+
+.first-plan, .second-plan, .third-plan, .fourth-plan {
+    /* height: 200px; */
+}
+
+.first-plan h2, .second-plan h2, .third-plan h2, .fourth-plan h2 {
+    font-weight: 600;
+}
+
+div.plans .btn-plans {
+    background-color: #0f7173;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.coin {
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.pertime {
+    font-size: 10px;
+}
+
 @media (max-width: 1199.98px) {
     .testimonial-item .photo {
         text-align: center;
