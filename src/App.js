@@ -6,12 +6,14 @@ import Footer from "./components/footer";
 import Download from './components/pages/download/index';
 import Subscribe from "./components/pages/payment";
 import Contact from "./components/pages/contact";
+import WhatsApp from "./components/components/whatsapp";
 
 // my components
 
 function App() {
     return (
         <>
+            <WhatsApp/>
             <Header />
             <BrowserRouter>
                 <Switch>
