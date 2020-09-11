@@ -10,13 +10,12 @@ class PlanService {
                 displayName: "Redplay",
                 type: "redplaym",
                 period: "M",
-                price: 24.99,
+                price: 25.00,
                 details: [
                     { feature: "30", desc: "dias de acesso" },
                     { feature: "Acesso", desc: "a 300+ canais" },
                     { feature: "60", desc: "Canais em 4k" },
                     { feature: "40", desc: "Canais adultos" },
-                    { feature: "15.000+", desc: "Filmes & Séries" },
                     { feature: "App", desc: "para celular Android" },
                     { feature: "HOT App", desc: "Disponível" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }
@@ -33,13 +32,12 @@ class PlanService {
                 displayName: "Redplay",
                 type: "redplay",
                 period: "A",
-                price: 129.99,
+                price: 150.00,
                 details: [
                     { feature: "30", desc: "dias de acesso" },
                     { feature: "Acesso", desc: "a 300+ canais" },
                     { feature: "60", desc: "Canais em 4k" },
                     { feature: "40", desc: "Canais adultos" },
-                    { feature: "15.000+", desc: "Filmes & Séries" },
                     { feature: "App", desc: "para celular Android" },
                     { feature: "HOT App", desc: "Disponível" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }
@@ -56,15 +54,11 @@ class PlanService {
                 displayName: "My Family <br>Cinema",
                 type: "mfamilycinemam",
                 period: "M",
-                price: 24.99,
+                price: 15.00,
                 details: [
                     { feature: "30", desc: "dias de acesso" },
-                    { feature: "Acesso", desc: "a 300+ canais" },
-                    { feature: "60", desc: "Canais em 4k" },
-                    { feature: "40", desc: "Canais adultos" },
                     { feature: "15.000+", desc: "Filmes & Séries" },
                     { feature: "App", desc: "para celular Android" },
-                    { feature: "HOT App", desc: "Disponível" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }
                 ],
                 payUrl: [
@@ -79,15 +73,11 @@ class PlanService {
                 displayName: "My Family <br>Cinema",
                 type: "mfamilycinema",
                 period: "A",
-                price: 129.99,
+                price: 120.00,
                 details: [
                     { feature: "30", desc: "dias de acesso" },
-                    { feature: "Acesso", desc: "a 300+ canais" },
-                    { feature: "60", desc: "Canais em 4k" },
-                    { feature: "40", desc: "Canais adultos" },
                     { feature: "15.000+", desc: "Filmes & Séries" },
                     { feature: "App", desc: "para celular Android" },
-                    { feature: "HOT App", desc: "Disponível" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }
                 ],
                 payUrl: [

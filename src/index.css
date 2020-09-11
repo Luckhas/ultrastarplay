@@ -329,6 +329,7 @@ section h4::after {
 
 div.plans-columns {
     width: 280px;
+    height: 518px;
     background-color: #fff;
     box-shadow: 0 0 5px #0005;
 }
@@ -699,6 +700,10 @@ div.plans .btn-plans {
 
 .pertime {
     font-size: 10px;
+}
+
+.download-title h2 {
+    color: #990000 !important;
 }
 
 @media (max-width: 1199.98px) {

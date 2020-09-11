@@ -14,10 +14,11 @@ function Header(props) {
                     <div className="row ">
                         <div className="col-md-4">
                             <h1>
-                                Lorem ipsum, dolor sit amet
+                                Turbine sua TV
                             </h1>
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit provident eaque laborum consequatur architecto odio.
+                                Com os melhores APLICATIVOS do momento.
+                                Viva a experiência redplay e my family cinema.
                             </p>
                             <a href="asda" className="btn btn-light">Experimente GRÁTIS por 7 dias</a>
                         </div>
