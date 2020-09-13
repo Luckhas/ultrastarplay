@@ -27,7 +27,7 @@ function PlanItem(props) {
                     <span>R$ </span>
                     <span>{firstPrice},</span>
                     <span>
-                        {lastPrice} /{plan.period == "A" ? "ano" : "mês"}
+                        {lastPrice != null ? lastPrice : "00"} /{plan.period == "A" ? "ano" : "mês"}
                     </span>
                 </div>
             </div>

@@ -1,13 +1,9 @@
 import React from "react";
-import { Parallax, Background } from "react-parallax";
-import Faq from "react-faq-component";
-import TestItem from "../../components/carouselItem";
-
 
 function Download() {
     return (
         <div id="middleContent" className="container-fluid p-0">
-            <section id="channels" className="container-fluid">
+            <section className="container-fluid">
                 <div className="container">
                     <div className="mb-4">
                         <h2>Disponível para os seguintes dispositivos</h2>

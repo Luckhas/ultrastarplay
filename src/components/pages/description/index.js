@@ -1,12 +1,9 @@
 import React from "react";
-import { Parallax, Background } from "react-parallax";
-import Faq from "react-faq-component";
-import TestItem from "../../components/carouselItem";
 
 
 function Description() {
     return (
-        <section id="channels" className="container-fluid p-0">
+        <section className="container-fluid">
             <h2>Conheça nossos planos</h2>
             
             <div className="first-plan">

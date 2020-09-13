@@ -481,6 +481,10 @@ div.mfamilycinema::before {
     text-align: center;
     position: relative;
     padding: 30px 10%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .testimonial-item > div:nth-child(2) .quoteL,
@@ -682,6 +686,8 @@ footer .logo {
 
 .first-plan, .second-plan, .third-plan, .fourth-plan {
     /* height: 200px; */
+    padding: 30px 0;
+    margin: 10px auto;
 }
 
 .first-plan h2, .second-plan h2, .third-plan h2, .fourth-plan h2 {
