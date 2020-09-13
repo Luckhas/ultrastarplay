@@ -329,9 +329,16 @@ section h4::after {
 
 div.plans-columns {
     width: 280px;
-    height: 518px;
+    min-height: 518px;
     background-color: #fff;
     box-shadow: 0 0 5px #0005;
+    position: relative;
+}
+
+div.plans-columns div.btn-holder {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
 }
 
 div.plan-detail {

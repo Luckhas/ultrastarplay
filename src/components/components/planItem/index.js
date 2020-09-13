@@ -41,7 +41,7 @@ function PlanItem(props) {
                         );
                     })}
                 </ul>
-                <div className="text-center">
+                <div className="text-center btn-holder">
                     <button onClick={() => onPlanSelect(plan)} className="btn btn-plans">
                         Assinar
                     </button>

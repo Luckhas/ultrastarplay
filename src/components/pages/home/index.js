@@ -7,7 +7,7 @@ import { planService } from "../../../services/PlanService";
 import { useHistory, withRouter } from "react-router-dom";
 
 const data = {
-    // title: "FAQ (How it works)",
+    // title: "FAQ (Colocar perguntas aqui.)",
     rows: [
         {
             title: "Lorem ipsum dolor sit amet,",
@@ -191,8 +191,6 @@ function Home() {
                         <div id="carouselControls" className="carousel slide" data-ride="carousel">
                             <div className="carousel-inner">
                                 <TestItem status="active" />
-                                <TestItem />
-                                <TestItem />
                             </div>
                             <div className="carouselControllers">
                                 <a href="#carouselControls" role="button" data-slide="prev">
