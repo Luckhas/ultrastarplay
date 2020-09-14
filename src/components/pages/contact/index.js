@@ -1,6 +1,19 @@
-import React from "react";
+import React, { useState} from "react";
+import sendEmail from './../../../services/MailService';
 
 export default function Contact() {
+    
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [message, setMessage] = useState();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const result = await sendEmail(name, email, message);
+
+        console.log(result);
+    } 
+
     return (
         <>
             <section className="container-fluid">
@@ -19,26 +32,27 @@ export default function Contact() {
                         <div className="mt-5">
                             <h2>Formulário de Contato</h2>
                             <p>
-                                <form>
+                                <form onSubmit={handleSubmit}>
                                     <div className="form-group">
                                         <label for="contactName">Seu nome</label>
-                                        <input type="text" className="form-control" id="contactName" aria-describedby="emailHelp" />
+                                        <input type="text" className="form-control" id="contactName" onChange={e => setName(e.target.value)} aria-describedby="emailHelp" />
                                     </div>
                                     <div className="form-group">
                                         <label for="contactMail">E-mail</label>
-                                        <input type="email" className="form-control" id="contactMail" />
+                                        <input type="email" className="form-control" id="contactMail" onChange={e => setEmail(e.target.value)} />
                                         <small id="emailHelp" className="form-text text-muted">
                                             Iremos enviar a resposta nesse e-mail.
                                         </small>
                                     </div>
                                     <div className="form-group">
                                         <label for="contactMessage">Mensagem</label>
-                                        <textarea class="form-control" id="contactMessage" rows="5"></textarea>
+                                        <textarea class="form-control" id="contactMessage" rows="5" onChange={e => setMessage(e.target.value)}></textarea>
                                     </div>
                                     <button type="submit" className="btn btn-primary">
                                         Enviar Mensagem
                                     </button>
                                 </form>
+                                <div className="formResponse"></div>
                             </p>
                         </div>
                     </div>
