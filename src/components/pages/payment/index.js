@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { planService } from "../../../services/PlanService";
 
 export default function Subscribe() {
@@ -33,20 +33,22 @@ export default function Subscribe() {
                                 </tr>
                             </tbody>
                         </table>
-                        <p>
-                            <a href="">Mudar plano</a>
-                        </p>
+                        <div>
+                            <Link to="/assinar">
+                                Mudar Plano
+                            </Link>
+                        </div>
 
                         <div className="payment-type">
                             <div className="rh-dark text-center">Escolha a plataforma de pagamento</div>
                             <div className="row">
                                 <div className="col text-center">
-                                    <a href={planDetails.payUrl[0].mp}>
+                                    <a href={planDetails.payUrl[0].mp} target="_blank">
                                         <img className="pLogo" src="/assets/images/mercado-pago-logo.png" alt="" />
                                     </a>
                                 </div>
                                 <div className="col text-center">
-                                    <a href={planDetails.payUrl[0].pp}>
+                                    <a href={planDetails.payUrl[0].pp} target="_blank">
                                         <img className="pLogo" src="/assets/images/picpay-logo.png" alt="" />
                                     </a>
                                 </div>

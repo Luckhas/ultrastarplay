@@ -6,7 +6,7 @@ export default function WhatsApp() {
             <div id="whastsapp">
                 <div>
                     <div className="whats-logo">
-                        <i class="fab fa-whatsapp"></i>
+                        <i className="fab fa-whatsapp"></i>
                     </div>
                 </div>
                 <div className="whats-numbers">

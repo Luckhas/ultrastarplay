@@ -5,7 +5,7 @@ function Header(props) {
     return (
         <header>
 
-            <div id="menu" className="container">
+            <div id="menu" className="container-lg">
                 <Menu/>
             </div>
 

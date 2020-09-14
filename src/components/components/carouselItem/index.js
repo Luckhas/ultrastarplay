@@ -24,7 +24,7 @@ function TestItem() {
         }
 
         return (
-            <div className={'carousel-item ' + (index === 0 ? "active" : "")}>
+            <div key={index} className={'carousel-item ' + (index === 0 ? "active" : "")}>
                 <div className="testimonial-item row">
                     <div className="col-md-4">
                         <div className="row">
@@ -34,21 +34,6 @@ function TestItem() {
                             <div className="col-xl-6">
                                 <div className="stars">
                                     {stars(item.score)}
-                                    {/* <span className="golden-star">
-                                        <i className="fas fa-star"></i>
-                                    </span>
-                                    <span className="golden-star">
-                                        <i className="fas fa-star"></i>
-                                    </span>
-                                    <span className="golden-star">
-                                        <i className="fas fa-star"></i>
-                                    </span>
-                                    <span className="golden-star">
-                                        <i className="fas fa-star"></i>
-                                    </span>
-                                    <span className="">
-                                        <i className="fas fa-star"></i>
-                                    </span> */}
                                 </div>
                                 <div className="information">
                                     <p>{item.name}</p>

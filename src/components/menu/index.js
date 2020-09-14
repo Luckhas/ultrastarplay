@@ -7,11 +7,7 @@ function Menu() {
                 <img src="/assets/images/logo.png"/>
             </a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                {/* <span className="navbar-toggler-icon">
-                    <i className="fas fa-bars"></i>
-                </span> */}
                 <i className="fas fa-bars navbar-toggler-icon"></i>
-
             </button>
 
             <div className="collapse navbar-collapse" id="mainNavbar">
