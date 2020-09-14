@@ -27,7 +27,7 @@ const data = {
         },
         {
             title: "Sobre os aparelhos TV Box?",
-            content: "<img src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png' />",
+            content: "Box TV é um pequeno aparelho que possui processador, memória RAM e armazenamento próprio e quando conectado a rede de internet, seja via wi-fi ou cabo ethernet, transforma-se em um centralizador e reprodutor de conteúdos de mídia de uma TV. As TV Box rodam em um sistema operacional, normalmente Android, e com elas é possível ouvir música, assistir filmes e séries e até jogar alguns títulos pela TV. Tudo de forma simples e rápida.",
         },
     ],
 };
