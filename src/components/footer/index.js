@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 
 function Footer() {
     return(
@@ -11,12 +13,9 @@ function Footer() {
                     <div className="col">
                         <h6>Links Principais</h6>
                         <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Download</a></li>
-                            <li><a href="">Assinar</a></li>
-                            <li><a href="">Baixar</a></li>
-                            <li><a href="">Como Baixar</a></li>
-                            <li><a href="">Como Usar</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/download">Download</a></li>
+                            <li><a href="/assinar">Assinar</a></li>
                         </ul>
                     </div>
                     <div className="col text-center">

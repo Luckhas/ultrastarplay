@@ -10,25 +10,23 @@ const data = {
     // title: "FAQ (Colocar perguntas aqui.)",
     rows: [
         {
-            title: "Lorem ipsum dolor sit amet,",
-            content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat, 
-              ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus. 
-              In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae. 
-              Fusce sed commodo purus, at tempus turpis.`,
+            title: "O que é REDPLAY?",
+            content: `Acesso a +300 canais RedPlay por 30 dias ou 365 dias
+            198 Canais nacionais e internacionais + 60 Canais em 4K + 40 Canais adultos
+            Acesso gratuito ao aplicativo HOT ao fazer login com a mesma conta RedPlay
+            App móvel para smartphone Android
+            Você pode usar a mesma conta no celular e na TV box (não simultaneamente).`,
         },
         {
-            title: "Nunc maximus, magna at ultricies elementum",
+            title: "O que é MY FAMILY CINEMA?",
             content: "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
         },
         {
-            title: "Curabitur laoreet, mauris vel blandit fringilla",
-            content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem. 
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam. 
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat. 
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+            title: "Quais são as formas de pagamento?",
+            content: `Cartão de crédito (mercado pago), transferência bancária ou depósitos e Pic Pay. (Não aceitamos depósito em envelope)`,
         },
         {
-            title: "What is the package version",
+            title: "Sobre os aparelhos TV Box?",
             content: "<img src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png' />",
         },
     ],
