@@ -30,6 +30,21 @@ function Footer() {
                         <p>
                             <img className="logo" src="/assets/images/logo.png" alt=""/>
                         </p>
+                        <div className="social-medias">
+                            <div className="row">
+                                <div className="col">
+                                    <a href="https://www.facebook.com/heleno.venancio.56" target="_blank">
+                                        <i class="fab fa-facebook-square"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/heleno.venancio.56" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCTDanNXCy5J9ZhuPYw6rnXw" target="_blank">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

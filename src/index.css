@@ -729,6 +729,22 @@ div.plans .btn-plans {
   color: #990000 !important;
 }
 
+.social-medias a {
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.social-medias a:hover:nth-child(1) {
+  color: #3b5998;
+}
+
+.social-medias a:hover:nth-child(2) {
+  color: #C13584;
+}
+
+.social-medias a:hover:nth-child(3) {
+  color: #FF0000;
+}
 @media (max-width: 1199.98px) {
   .testimonial-item .photo {
     text-align: center;
