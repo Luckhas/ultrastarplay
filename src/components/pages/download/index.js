@@ -25,7 +25,7 @@ function Download() {
                                             <div className="description-download">
                                                 Dispositivos Android
                                             </div>
-                                            <a href="https://oss.vmfc.io/mfc/mobile/1050199/MFC_Mobile_151_prod.apk" className="btn btn-download">
+                                            <a href="https://oss.vmfc.io/mfc/mobile/1050199/MFC_Mobile_151_prod.apk" target="_blank" className="btn btn-download">
                                                 Download
                                             </a>
                                             <div className="note">
@@ -47,7 +47,7 @@ function Download() {
                                             <div className="description-download">
                                                 Haier, JVC, Semp, Sony e TCL
                                             </div>
-                                            <a href="https://oss.vmfc.io/mfc/20001/mfc_stb_genericft_201.apk" className="btn btn-download">
+                                            <a href="https://oss.vmfc.io/mfc/20001/mfc_stb_genericft_201.apk" target="_blank" className="btn btn-download">
                                                 Download
                                             </a>
                                             <div className="note">
@@ -91,7 +91,7 @@ function Download() {
                                             <div className="description-download">
                                                 Xiaomi e TV box Android
                                             </div>
-                                            <a href="https://oss.vmfc.io/mfc/20001/mfc_stb_genericft_201.apk" className="btn btn-download">
+                                            <a href="https://oss.vmfc.io/mfc/20001/mfc_stb_genericft_201.apk" target="_blank" className="btn btn-download">
                                                 Download
                                             </a>
                                             <div className="note">
@@ -113,7 +113,7 @@ function Download() {
                                             <div className="description-download">
                                                 Samsung e Lenovo
                                             </div>
-                                            <a href="https://oss.vmfc.io/mfc/mobile/1050199/MFC_Mobile_151_prod.apk" className="btn btn-download">
+                                            <a href="https://oss.vmfc.io/mfc/mobile/1050199/MFC_Mobile_151_prod.apk" target="_blank" className="btn btn-download">
                                                 Download
                                             </a>
                                             <div className="note">
@@ -134,6 +134,27 @@ function Download() {
                                 <div className="text-center">
                                     <div className="my-3 my-md-0">
                                         <div>
+                                            <img className="icon-download" src="https://web.redtvm.club/redplay/mobile/icon_logo.png" />
+                                        </div>
+                                        <div className="text-center">
+                                            Redplay Launcher<br />
+                                            <div className="description-download">
+                                                Android
+                                            </div>
+                                            <a href="http://www.mediafire.com/file/mwpttyfub3ipolv/RedPlayApp_100_20191125_%25285%2529.apk/file" target="_blank" className="btn btn-download">
+                                                Download
+                                            </a>
+                                            <div className="note">
+                                                * Android 5.1 ou superior
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col">
+                                <div className="text-center">
+                                    <div className="my-3 my-md-0">
+                                        <div>
                                             <img className="icon-download" src="/assets/images/direct.png" />
                                         </div>
                                         <div className="text-center">
@@ -141,7 +162,7 @@ function Download() {
                                             <div className="description-download">
                                                 Versão direta
                                             </div>
-                                            <a href="http://download2170.mediafire.com/9wj7drhpqd8g/2ak8nakrn4csq1t/app-release+%281%29.apk" className="btn btn-download">
+                                            <a href="http://www.mediafire.com/file/2ak8nakrn4csq1t/app-release_%25281%2529.apk/file" target="_blank" className="btn btn-download">
                                                 Download
                                             </a>
                                             <div className="note">
@@ -163,7 +184,7 @@ function Download() {
                                             <div className="description-download">
                                                 TV Box REDPLAY
                                             </div>
-                                            <a href="http://download2269.mediafire.com/r0cad5l7msug/mwpttyfub3ipolv/RedPlayApp_100_20191125+%285%29.apk" className="btn btn-download">
+                                            <a href="http://download2269.mediafire.com/r0cad5l7msug/mwpttyfub3ipolv/RedPlayApp_100_20191125+%285%29.apk" target="_blank" className="btn btn-download">
                                                 Download
                                             </a>
                                             <div className="note">
@@ -185,7 +206,7 @@ function Download() {
                                             <div className="description-download">
                                                 Android
                                             </div>
-                                            <a href="http://web.redtvm.club/redplay/mobile/rpm_152_76262350fa7c4a84158a9e57f2d8208dfbb62630.apk" target="_blank" className="btn btn-download">
+                                            <a href="http://web.redtvm.club/redplay/mobile/rpm_152_76262350fa7c4a84158a9e57f2d8208dfbb62630.apk" target="_blank" target="_blank" className="btn btn-download">
                                                 Download
                                             </a>
                                             <div className="note">

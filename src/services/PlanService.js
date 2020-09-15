@@ -11,7 +11,7 @@ class PlanService {
                 type: "redplaym",
                 period: "M",
                 price: 25.00,
-                description: "Acesse mais de 600.000  filmes e series, aproveite uma plataforma multimidia em alta definição. App para celular androdid e tv box ,disponivel 7 dias gratis para novos usuarios",
+                description: "Acesse +300 canais, 60 canais em 4k, 40 canais adultos. app para celular androide TV box, disponivel. 7 dias gratis para novos usuarios",
                 details: [
                     { feature: "30", desc: "dias de acesso" },
                     { feature: "Acesso", desc: "a 300+ canais" },
@@ -57,7 +57,7 @@ class PlanService {
                 type: "mfamilycinemam",
                 period: "M",
                 price: 15.00,
-                description: "Acesse mais de 600.000  filmes e series, aproveite uma plataforma multimidia em alta definição. App para celular androdid e tv box ,disponivel 7 dias gratis para novos usuarios",
+                description: "Acesse mais de 600.000  filmes e series, aproveite uma plataforma multimidia em alta definição. App para celular Android e tv box, disponivel 7 dias gratis para novos usuarios",
                 details: [
                     { feature: "30", desc: "dias de acesso" },
                     { feature: "15.000+", desc: "Filmes & Séries" },
@@ -77,7 +77,7 @@ class PlanService {
                 type: "mfamilycinema",
                 period: "A",
                 price: 120.00,
-                description: "Acesse +300 canais, 60 canais em 4k, 40 canais adultos. app para celular androide TV box, disponivel. 7 dias gratis para novos usuarios",
+                description: "Acesse mais de 600.000  filmes e series, aproveite uma plataforma multimidia em alta definição. App para celular Android e tv box, disponivel 7 dias gratis para novos usuarios",
                 details: [
                     { feature: "30", desc: "dias de acesso" },
                     { feature: "15.000+", desc: "Filmes & Séries" },
