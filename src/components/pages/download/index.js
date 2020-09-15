@@ -134,7 +134,7 @@ function Download() {
                                 <div className="text-center">
                                     <div className="my-3 my-md-0">
                                         <div>
-                                            <img className="icon-download" src="https://web.redtvm.club/redplay/mobile/icon_logo.png" />
+                                            <img className="icon-download" src="/assets/images/redplay-blacklogo.png" />
                                         </div>
                                         <div className="text-center">
                                             Redplay Launcher<br />

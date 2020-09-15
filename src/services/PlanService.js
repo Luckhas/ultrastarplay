@@ -11,7 +11,7 @@ class PlanService {
                 type: "redplaym",
                 period: "M",
                 price: 25.00,
-                description: "Acesse +300 canais, 60 canais em 4k, 40 canais adultos. app para celular androide TV box, disponivel. 7 dias gratis para novos usuarios",
+                description: "Acesse +300 canais, 60 canais em 4k, 40 canais adultos. App para celular Android e TV box disponivel. 7 dias gratis para novos usuarios",
                 details: [
                     { feature: "30", desc: "dias de acesso" },
                     { feature: "Acesso", desc: "a 300+ canais" },
@@ -34,9 +34,9 @@ class PlanService {
                 type: "redplay",
                 period: "A",
                 price: 150.00,
-                description: "Acesse +300 canais, 60 canais em 4k, 40 canais adultos. app para celular androide TV box, disponivel. 7 dias gratis para novos usuarios",
+                description: "Acesse +300 canais, 60 canais em 4k, 40 canais adultos. App para celular Android e TV box, disponivel. 7 dias gratis para novos usuarios",
                 details: [
-                    { feature: "30", desc: "dias de acesso" },
+                    { feature: "365", desc: "dias de acesso" },
                     { feature: "Acesso", desc: "a 300+ canais" },
                     { feature: "60", desc: "Canais em 4k" },
                     { feature: "40", desc: "Canais adultos" },
@@ -79,7 +79,7 @@ class PlanService {
                 price: 120.00,
                 description: "Acesse mais de 600.000  filmes e series, aproveite uma plataforma multimidia em alta definição. App para celular Android e tv box, disponivel 7 dias gratis para novos usuarios",
                 details: [
-                    { feature: "30", desc: "dias de acesso" },
+                    { feature: "365", desc: "dias de acesso" },
                     { feature: "15.000+", desc: "Filmes & Séries" },
                     { feature: "App", desc: "para celular Android" },
                     { feature: "7 dias grátis", desc: "para novos usuários" }

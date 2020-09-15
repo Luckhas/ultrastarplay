@@ -19,7 +19,7 @@ const data = {
         },
         {
             title: "O que é MY FAMILY CINEMA?",
-            content: "Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.",
+            content: "É um aplicativo de filmes e séries.",
         },
         {
             title: "Quais são as formas de pagamento?",
