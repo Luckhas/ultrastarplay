@@ -16,6 +16,7 @@ function Footer() {
                             <li><a href="/">Home</a></li>
                             <li><a href="/download">Download</a></li>
                             <li><a href="/assinar">Assinar</a></li>
+                            <li><a href="/contato">Contato</a></li>
                         </ul>
                     </div>
                     <div className="col text-center">
