@@ -40,10 +40,10 @@ function Download() {
                                 <div className="text-center">
                                     <div className="my-3 my-md-0">
                                         <div>
-                                            <img className="icon-download" src="/assets/images/smart-tv.svg" />
+                                            <img className="icon-download" src="/assets/images/android-tv.png" />
                                         </div>
                                         <div className="text-center">
-                                            Smart TV Android<br />
+                                            Android TV<br />
                                             <div className="description-download">
                                                 Haier, JVC, Semp, Sony e TCL
                                             </div>
@@ -177,7 +177,7 @@ function Download() {
                                 <div className="text-center">
                                     <div className="my-3 my-md-0">
                                         <div>
-                                            <img className="icon-download" src="/assets/images/smart-tv.svg" />
+                                            <img className="icon-download" src="/assets/images/android-tv.png" />
                                         </div>
                                         <div className="text-center">
                                             TV Box<br />
